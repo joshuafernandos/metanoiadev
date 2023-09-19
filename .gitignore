@@ -9,15 +9,15 @@
 /.htaccess
 .idea
 .htaccess
-/wp-content/themes/metanoia/node_modules/
+/wp-content/themes/understrap-child/node_modules/
 /wp-content/plugins/akismet/
 /wp-includes/
 
 /wp-content/wflogs/*
 
-/wp-content/themes/metanoia/src/build/browser-sync.config.js
-/wp-content/themes/metanoia/css/child-theme.css
-/wp-content/themes/metanoia/css/child-theme.css.map
-/wp-content/themes/metanoia/css/child-theme.min.css
-/wp-content/themes/metanoia/css/child-theme.min.css.map
+/wp-content/themes/understrap-child/src/build/browser-sync.config.js
+/wp-content/themes/understrap-child/css/child-theme.css
+/wp-content/themes/understrap-child/css/child-theme.css.map
+/wp-content/themes/understrap-child/css/child-theme.min.css
+/wp-content/themes/understrap-child/css/child-theme.min.css.map
 /wp-content/wflogs/
