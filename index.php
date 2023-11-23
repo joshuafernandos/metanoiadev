@@ -11,6 +11,8 @@
  *
  * @var bool
  */
+// echo __DIR__;
+// exit();
 define( 'WP_USE_THEMES', true );
 
 /** Loads the WordPress Environment and Template */
