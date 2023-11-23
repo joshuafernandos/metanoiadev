@@ -67,7 +67,7 @@ if ( ! function_exists( 'understrap_woocommerce_wrapper_end' ) ) {
 	 */
 	function understrap_woocommerce_wrapper_end() {
 		echo '</main>';
-		get_template_part( 'global-templates/right-sidebar-check' );
+		// get_template_part( 'global-templates/right-sidebar-check' );
 		echo '</div><!-- .row -->';
 		echo '</div><!-- .container(-fluid) -->';
 		echo '</div><!-- #woocommerce-wrapper -->';

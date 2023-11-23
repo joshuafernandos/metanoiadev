@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
 /**
  * The right sidebar containing the main widget area
  *
@@ -23,4 +23,4 @@ $sidebar_pos = get_theme_mod( 'understrap_sidebar_position' );
 <?php endif; ?>
 <?php dynamic_sidebar( 'right-sidebar' ); ?>
 
-</div><!-- #right-sidebar -->
+</div>#right-sidebar -->

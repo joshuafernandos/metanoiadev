@@ -1,0 +1,124 @@
+.top-nav {
+  background-color: $color-main;
+  padding-block: 5px;
+  color: $color-white;
+  font-family: $font-main;
+  font-weight: 700;
+  font-size: 16px;
+
+  @media (max-width: $sm) {
+    font-size: 14px;
+  }
+}
+
+header.main__header {
+  position: relative;
+  box-shadow: 0px 10px 10px -16px $color-off-black;
+
+  .logo {
+    img {
+      width: 70px;
+
+      @media (max-width: $md) {
+        width: 60px;
+      }
+
+      @media (max-width: $sm) {
+        width: 50px;
+      }
+    }
+  }
+
+  .search {
+    @media (max-width: $md) {
+      display: none;
+    }
+  }
+
+  .open-mobile-menu{
+    display: none;
+
+    @media(max-width: $md){
+        display: block;
+    }
+  }
+
+  .header__main-menu {
+    ul.main-menu {
+      display: flex;
+      padding: 0;
+      margin: 0;
+      justify-content: space-between;
+
+      @media (max-width: $md) {
+        display: block;
+        opacity: 0;
+        visibility: hidden;
+        text-align: center;
+      }
+
+      li {
+        list-style: none;
+
+        @media (max-width: $md) {
+          padding: 15px;
+        }
+
+        a {
+          text-decoration: none;
+          font-family: $font-main;
+          font-size: 18px;
+          font-weight: 500;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            right: 100%;
+            height: 1px;
+            transition: all 0.5s ease;
+            background-color: $color-off-black;
+          }
+
+          &:hover {
+            &::after {
+              right: 0;
+            }
+          }
+
+          @media (max-width: $md) {
+            font-size: 18px;
+          }
+        }
+
+        &.active {
+          a {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    @media (max-width: $md) {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 100%;
+      top: 100%;
+      background-color: $color-white;
+      box-shadow: 0px 10px 10px -16px $color-off-black;
+      z-index: $z-index-3;
+
+      &.active {
+        bottom: auto;
+
+        ul.main-menu {
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}

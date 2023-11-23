@@ -11,7 +11,6 @@
 .htaccess
 /wp-content/themes/understrap-child/node_modules/
 /wp-content/plugins/akismet/
-/wp-includes/
 
 /wp-content/wflogs/*
 

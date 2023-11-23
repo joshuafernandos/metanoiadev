@@ -1,0 +1,100 @@
+.home__banner {
+  .big-banner {
+    .big-banner-item {
+      .background {
+        height: 400px;
+        width: 100%;
+
+        @media (max-width: $md) {
+          height: 300px;
+        }
+
+        @media (max-width: $sm) {
+          height: 200px;
+        }
+      }
+    }
+  }
+
+  .small-banner {
+    .small-banner-item {
+      a {
+        text-decoration: none;
+        position: relative;
+
+        .background {
+          height: 120px;
+          width: 100%;
+
+          @media (max-width: $sm) {
+            height: 100px;
+          }
+        }
+
+        .overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 100%;
+          left: 0;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: $color-transparant-black;
+          transition: all 1s ease;
+
+          @media (max-width: $md) {
+            right: 0;
+          }
+
+          h3 {
+            opacity: 0;
+            visibility: hidden;
+
+            @media (max-width: $md) {
+              opacity: 1;
+              visibility: visible;
+            }
+
+            @include transition(
+              opacity 500ms linear,
+              visibility 0s linear 500ms
+            );
+          }
+        }
+
+        &:hover {
+          .overlay {
+            right: 0;
+
+            h3 {
+              opacity: 1;
+              visibility: visible;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.home__info {
+  .info-text-list {
+    .info-text {
+      a {
+        height: 200px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  .info-video{
+    height: 100%;
+    width: 100%;
+    @media (max-width: $md) {
+      height: 300px;
+    }
+  }
+}

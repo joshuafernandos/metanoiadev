@@ -1,0 +1,105 @@
+h5{
+    font-family: $font-secondary;
+    color: $color-white;
+    font-size: 22px;
+    
+    @media(max-width: $md){
+        font-size: 20px;
+    }
+
+    @media(max-width: $sm){
+        font-size: 18px;
+    }
+}
+
+.listing-heading{
+    font-family: $font-main;
+    color: $color-white;
+    font-size: 28px;
+
+    @media(max-width: $md){
+        font-size: 26px;
+    }
+
+    @media(max-width: $sm){
+        font-size: 24px;
+    }
+}
+
+.main-heading{
+    position: relative;
+    font-family: $font-secondary;
+    color: $color-main;
+    font-size: 50px;
+    text-transform: uppercase;
+
+    @media(max-width: $lg){
+        font-size: 42px;
+    }
+
+    @media(max-width: $md){
+        font-size: 34px;
+    }
+
+    @media(max-width: $sm){
+        font-size: 26px;
+    }
+
+    &::after{
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        right: 50%;
+        content: '';
+        height: 5px;
+        background-color: $color-off-black;
+    }
+}
+
+.second-heading{
+    font-family: $font-main;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 60px;
+    @media(max-width: $lg){
+        font-size: 55px;
+    }
+    @media(max-width: $md){
+        font-size: 50px;
+    }
+    @media(max-width: $sm){
+        font-size: 45px;
+    }
+}
+
+.third-heading{
+    font-family: $font-main;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 50px;
+    @media(max-width: $lg){
+        font-size: 46px;
+    }
+    @media(max-width: $md){
+        font-size: 42px;
+    }
+    @media(max-width: $sm){
+        font-size: 38px;
+    }
+
+}
+
+.product-heading{
+    font-family: $font-main;
+    font-size: 20px;
+    color: $color-main;
+    font-weight: 400;
+
+    @media(max-width: $md){
+        font-size: 18px;
+    }
+
+    @media(max-width: $sm){
+        font-size: 16px;
+    }
+}

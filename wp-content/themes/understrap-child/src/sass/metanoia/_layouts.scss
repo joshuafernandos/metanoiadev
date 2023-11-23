@@ -1,0 +1,39 @@
+.custom-pblock-1{
+    padding-block: 80px;
+    
+    @media(max-width: $xl){
+        padding-block: 70px;
+    }
+    
+    @media(max-width: $lg){
+        padding-block: 60px;
+    }
+    
+    @media(max-width: $md){
+        padding-block: 50px;
+    }
+    
+    @media(max-width: $sm){
+        padding-block: 40px;
+    }
+}
+
+.custom-pbottom-1{
+    padding-bottom: 80px;
+    
+    @media(max-width: $xl){
+        padding-bottom: 70px;
+    }
+    
+    @media(max-width: $lg){
+        padding-bottom: 60px;
+    }
+    
+    @media(max-width: $md){
+        padding-bottom: 50px;
+    }
+    
+    @media(max-width: $sm){
+        padding-bottom: 40px;
+    }
+}

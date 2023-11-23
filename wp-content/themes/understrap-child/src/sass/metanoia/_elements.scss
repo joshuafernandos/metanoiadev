@@ -1,0 +1,23 @@
+.main-button{
+    font-size: 20px;
+    font-family: $font-secondary;
+    text-decoration: none;
+    color: $color-white;
+    background: $color-off-black;
+    padding: 5px 60px;
+    text-transform: uppercase;
+
+    @media (max-width: $md){
+        font-size: 18px;
+        padding: 5px 50px;
+    }
+
+    @media (max-width: $sm){
+        font-size: 16px;
+        padding: 5px 40px;
+    }
+
+    &:hover{
+       color: $color-white; 
+    }
+}
